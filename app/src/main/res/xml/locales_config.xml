@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  声明本 App 支持的语言。
+  Android 13+ 会据此在「系统设置 → 应用 → 烧钱闹钟 → 语言」里生成入口，
+  让用户不打开 App 也能换语言。
+-->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="zh" />
+</locale-config>

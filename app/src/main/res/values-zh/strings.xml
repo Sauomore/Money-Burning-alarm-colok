@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">烧钱闹钟</string>
+
+    <!-- ============ 通用 ============ -->
+    <string name="common_back">返回</string>
+    <string name="common_delete">删除</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_ok">确定</string>
+    <string name="common_save">保存</string>
+    <string name="common_settings">设置</string>
+    <string name="common_new_alarm">新建闹钟</string>
+
+    <!-- ============ 语言 ============ -->
+    <string name="settings_language">语言</string>
+    <string name="settings_language_hint">对整个 App 生效，包括通知</string>
+    <string name="language_system">跟随系统</string>
+    <string name="language_zh">简体中文</string>
+    <string name="language_en">English</string>
+
+    <!-- ============ 重复 / 星期 ============ -->
+    <string name="repeat_once">仅一次</string>
+    <string name="repeat_daily">每天</string>
+    <string name="repeat_weekdays">工作日</string>
+    <string name="repeat_weekends">周末</string>
+    <!-- 中文没有单复数变化，只提供 other -->
+    <plurals name="repeat_selected_days">
+        <item quantity="other">已选 %1$d 天</item>
+    </plurals>
+    <string-array name="day_short">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </string-array>
+
+    <!-- ============ 难度 ============ -->
+    <string name="difficulty_easy">简单 · 两位数加减</string>
+    <string name="difficulty_normal">中等 · 乘除与三位数</string>
+    <string name="difficulty_hard">困难 · 两位数相乘 / 混合运算</string>
+
+    <!-- ============ 焚烧模式 ============ -->
+    <string name="burn_mode_waste">纯烧</string>
+    <string name="burn_mode_waste_desc">把 max_tokens 拉满，生成一大段废话然后直接丢弃</string>
+    <string name="burn_mode_roast">毒鸡汤</string>
+    <string name="burn_mode_roast_desc">让模型骂你一句，弹在屏幕上并朗读出来</string>
+    <string name="burn_mode_alternate">交替</string>
+    <string name="burn_mode_alternate_desc">一次纯烧、一次毒鸡汤，轮着来</string>
+
+    <!-- ============ 闹钟列表 ============ -->
+    <string name="list_title">烧钱闹钟</string>
+    <string name="list_empty_title">还没有闹钟</string>
+    <string name="list_empty_hint">点右下角 + 建一个</string>
+    <plurals name="list_alarm_summary">
+        <item quantity="other">%1$s · %2$d 题 · 宽限 %3$d 秒</item>
+    </plurals>
+
+    <string name="setup_banner_one">再完成一个配置，即可开始使用</string>
+    <string name="setup_banner_many">再完成 %1$d 个配置，即可开始使用</string>
+    <string name="setup_fix">去开启</string>
+    <string name="setup_notifications">通知权限</string>
+    <string name="setup_exact_alarm">精确闹钟权限</string>
+    <string name="setup_full_screen">锁屏全屏提醒权限</string>
+    <string name="setup_api_key">API Key 未配置（烧不起来）</string>
+
+    <!-- ============ 闹钟编辑 ============ -->
+    <string name="edit_title_new">新建闹钟</string>
+    <string name="edit_title_edit">编辑闹钟</string>
+    <string name="edit_change_time">修改时间</string>
+    <string name="edit_repeat">重复</string>
+    <string name="edit_repeat_none_hint">不选 = 只响一次</string>
+    <string name="edit_label">备注（可留空）</string>
+    <string name="edit_difficulty">题目难度</string>
+    <string name="edit_problem_count">要做对几道题：%1$d</string>
+    <string name="edit_grace">宽限时间：%1$d 秒</string>
+    <string name="edit_grace_hint">响铃后这么久还没做完，就开始烧 token</string>
+    <string name="edit_save">保存</string>
+    <string name="edit_test_now">立即试响一次</string>
+    <string name="edit_delete_confirm">删除这个闹钟？</string>
+
+    <!-- ============ 响铃页 ============ -->
+    <plurals name="ring_solve_count">
+        <item quantity="other">做对 %1$d 道题才能停</item>
+    </plurals>
+    <string name="ring_wrong_answer">答案不对，再算一遍</string>
+    <string name="ring_submit">提交</string>
+    <string name="ring_auto_release">输入正确后会自动解除</string>
+    <string name="ring_countdown_suffix">秒后开始烧 token</string>
+    <string name="ring_grace_total">宽限期共 %1$d 秒</string>
+    <string name="ring_no_api_warn">⚠ 尚未配置 API，到点也烧不起来</string>
+    <string name="ring_burning">正在焚烧 token</string>
+    <string name="ring_burn_stats">已调用 %1$d 次 · %2$d tokens · 持续 %3$s</string>
+    <string name="duration_min_sec">%1$d分%2$d秒</string>
+    <string name="duration_sec">%1$d秒</string>
+
+    <!-- ============ 通知 ============ -->
+    <string name="notif_ringing_title">闹钟响了 · 还有 %1$d 秒</string>
+    <string name="notif_burning_title">正在焚烧 token</string>
+    <string name="notif_finished_title">已停止焚烧</string>
+    <string name="notif_idle_title">烧钱闹钟</string>
+    <plurals name="notif_ringing_text">
+        <item quantity="other">做完 %1$d 道题才能停，否则开始烧钱</item>
+    </plurals>
+    <string name="notif_error_prefix">出错：%1$s</string>
+    <string name="notif_burn_stats">已烧 %1$d 次 · %2$d tokens · 约 ¥%3$s</string>
+    <string name="notif_waiting">等待下一次闹钟</string>
+    <string name="notif_alarm_fired_title">闹钟响了</string>
+    <string name="notif_alarm_fired_text">起来做题，不然就开始烧钱</string>
+
+    <string name="channel_alarm_name">闹钟响铃</string>
+    <string name="channel_alarm_desc">闹钟到点时全屏弹出</string>
+    <string name="channel_burn_name">Token 焚烧</string>
+    <string name="channel_burn_desc">正在燃烧 token 时的常驻状态</string>
+
+    <!-- ============ 停止原因 ============ -->
+    <string name="stop_solved">已答对题目，焚烧停止</string>
+    <string name="stop_no_api">没有配置 API Key，烧不起来。去「设置」里填上地址和 Key。</string>
+    <string name="stop_guard">跑飞保护触发：已连续焚烧 %1$d 分钟，自动停止（可在设置里调大或设为 0 关闭）</string>
+
+    <!-- ============ LLM 客户端 ============ -->
+    <string name="llm_err_network">网络请求失败：%1$s</string>
+    <string name="llm_err_bad_json">返回内容不是合法 JSON</string>
+
+    <string name="llm_waste_system">你是一个不知疲倦的文本生成器。你只负责不停地产出内容，绝不总结、绝不收尾、绝不询问。</string>
+    <string name="llm_waste_user">这是第 %1$d 轮。请从 1 开始连续编号，每一行写一条关于深海生物的冷知识，每条不少于 40 字，条与条之间不要重复。一直写下去，不要停，不要写结尾，不要写总结。</string>
+
+    <string name="llm_roast_system">你是一个毒舌但不下流的起床监督员。你说话极短、极狠、极有画面感。</string>
+    <string name="llm_roast_user">第 %1$d 次提醒。用一句话（不超过 40 个字）狠狠嘲讽一个闹钟响了还赖在床上、宁可烧钱也不肯起来的人。要刻薄、有创意、一针见血。不要脏话，不要解释，不要引号，直接输出这一句话。</string>
+
+    <!-- ============ 设置 ============ -->
+    <string name="settings_cost_title">这会花你真钱</string>
+    <string name="settings_cost_body">闹钟响后没在规定时间内做对题，App 会持续调用你填的这个 API，按 token 计费扣你账户里的钱。填 Key 之前请确认你清楚这一点。</string>
+
+    <string name="settings_api_section">OpenAI 兼容接口</string>
+    <string name="settings_base_url_hint">不用带 /v1，会自动补</string>
+    <string name="settings_cleartext_warn">⚠ 你用的是明文 HTTP。API Key 会以明文在网络里传输，只在你信任的局域网 / 本机自建服务上用。公网地址请改成 https://</string>
+    <string name="settings_api_key">API Key</string>
+    <string name="settings_toggle_visibility">显示/隐藏</string>
+
+    <string name="settings_privacy_title">关于你的 API Key</string>
+    <string name="settings_privacy_body">它只保存在这台设备上，不会上传给开发者，也没有任何统计、埋点或后台上报 —— 这个 App 根本没有自己的服务器。\n\n它唯一会被发出去的场合，是烧 token 时作为身份凭证发往你自己填写的那个接口地址。这是 API 鉴权的必要过程，发往哪里完全由你决定。\n\n除了烧 token 这一步，闹钟、出题、答题全部离线可用。</string>
+
+    <string name="settings_model">模型名</string>
+    <string name="settings_test_system">你是一个测试助手。</string>
+    <string name="settings_test_user">只回复两个字：正常</string>
+    <string name="settings_test_ok">✓ 连接成功：返回「%1$s」，本次约 %2$d tokens（¥%3$s）</string>
+    <string name="settings_testing">正在测试…</string>
+    <string name="settings_test_connection">测试连接</string>
+
+    <string name="settings_pricing">计价（用来估算烧了多少钱）</string>
+    <string name="settings_pricing_hint">去服务商价目表抄单价，单位是「元 / 每百万 token」</string>
+    <string name="settings_price_in">输入单价</string>
+    <string name="settings_price_out">输出单价</string>
+
+    <string name="settings_burn_mode">焚烧模式</string>
+    <string name="settings_max_tokens">单次最大输出 token：%1$d</string>
+    <string name="settings_max_tokens_hint">越大烧得越狠。「纯烧」模式下每次请求都会把这个额度尽量吐满。</string>
+    <string name="settings_interval">焚烧间隔：%1$d 秒一次</string>
+    <string name="settings_hourly_estimate">按当前设置满负荷估算：约 ¥%1$s / 小时</string>
+    <string name="settings_speak_roast">朗读毒鸡汤</string>
+    <string name="settings_speak_roast_hint">用系统 TTS 把嘲讽念出来</string>
+
+    <string name="settings_guard">跑飞保护</string>
+    <string name="settings_guard_body1">这一项防的是「代码出 bug 导致无限循环」，不是防你。</string>
+    <string name="settings_guard_body2">你主动选择「烧到答对为止」是合理的；但如果哪天循环逻辑写错了，你睡着的时候它可能一直烧下去。设一个上限，就是给这种情况兜底。</string>
+    <string name="settings_guard_label">连续焚烧上限（分钟）</string>
+    <string name="settings_guard_off">0 = 不限制，烧到天荒地老</string>
+    <string name="settings_guard_on">超过就自动停手</string>
+
+    <string name="settings_save">保存设置</string>
+    <string name="settings_confirm_title">确认一遍</string>
+    <string name="settings_confirm_body">保存后，当闹钟响了你没在规定时间内做对题，这个 App 就会不停地调用 %1$s，产生真实费用。\n\n费用从你的 API 账户扣，我无法帮你追回。确定继续吗？</string>
+    <string name="settings_confirm_yes">我知道，继续</string>
+    <string name="settings_confirm_no">再想想</string>
+    <string name="settings_model_fallback">你配置的模型</string>
+
+</resources>

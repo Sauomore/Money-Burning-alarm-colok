@@ -1,0 +1,25 @@
+# 默认按文本处理并统一用 LF。
+# 不这样做的话，Windows 上 clone 出来的 gradlew 会变成 CRLF，
+# 在 Linux / macOS 上直接报 "bad interpreter: No such file or directory"。
+* text=auto eol=lf
+
+# Windows 专用脚本保持 CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# 明确锁死这个：它是 shell 脚本，必须 LF
+gradlew  text eol=lf
+
+# 二进制文件不要做任何行尾转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.jar  binary
+*.jks  binary
+*.keystore binary
+*.apk  binary
+*.aab  binary

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  允许明文 HTTP 流量。
+
+  为什么放开：这个 App 的接口地址完全由用户自己填。很多人的用法是把它指向
+  局域网里的自建服务（Ollama、LM Studio、内网 OpenAI 代理），这些服务通常
+  只提供 http，Android 9+ 的默认策略会把它们全部拦掉。
+
+  代价：走 http 时 API Key 是明文传输的。设置页在检测到 http:// 时会显式警告，
+  公网地址请务必用 https。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

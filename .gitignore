@@ -1,0 +1,35 @@
+# ---------------- Gradle ----------------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ---------------- Android ----------------
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.cxx/
+release/
+
+# ---------------- 签名材料：绝对不要提交 ----------------
+# 密钥库泄露 = 任何人都能伪造你的 App 更新
+keystore.properties
+keystore/
+*.jks
+*.keystore
+
+# ---------------- IDE ----------------
+.idea/
+*.iml
+.vscode/
+
+# ---------------- 系统 ----------------
+.DS_Store
+Thumbs.db
+
+# ---------------- 本地调试产生的中间文件 ----------------
+ui.xml
+shot_*.png
