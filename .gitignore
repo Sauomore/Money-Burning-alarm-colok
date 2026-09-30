@@ -33,3 +33,7 @@ Thumbs.db
 # ---------------- 本地调试产生的中间文件 ----------------
 ui.xml
 shot_*.png
+_release_notes.md
+_payload.json
+_release_id.txt
+_apk_sha256.txt
